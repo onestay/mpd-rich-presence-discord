@@ -103,11 +103,11 @@ std::string createTitle(mpd_song_t* song)
     const char* uri = mpd_song_get_uri(song);
     const char* title = mpd_song_get_tag(song, MPD_TAG_TITLE, 0);
     if(title)
-        stream << title;
+        stream << "「" << title << "」";
     else if(name)
-        stream << name;
+        stream << "「" << name << "」";
     else if(uri)
-        stream << uri;
+        stream << "「" << uri << "」";
     else
         stream << "Unknown";
     
@@ -125,7 +125,7 @@ std::string createArtist(mpd_song_t* song)
     if(album)
     {
         if(artist) stream << " (";
-        stream << "album: " << album;
+        stream << "" << album;
         if(artist) stream << ")";
     }
     

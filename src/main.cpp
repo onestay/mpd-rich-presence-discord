@@ -11,10 +11,10 @@
 #include <cstdint>
 #include <discord_rpc.h>
 
-static const char* AppIdPlaying= "381948295830044683";
-static const char* AppIdPaused = "382303152327753739";
-static const char* AppIdIdle = "382302420073709568";
-static const char* AppIdMulti = "474605546457137157";
+static const char* AppIdPlaying= "498961449360556052";
+static const char* AppIdPaused = "498961449360556052";
+static const char* AppIdIdle = "498961449360556052";
+static const char* AppIdMulti = "498961449360556052";
 
 struct AppState
 {
